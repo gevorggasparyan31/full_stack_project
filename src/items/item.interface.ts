@@ -1,5 +1,3 @@
-// src/items/item.interface.ts
-
 export interface BaseItem {
   name: string;
   price: number;

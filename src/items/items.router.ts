@@ -5,8 +5,6 @@ import { BaseItem, Item } from './item.interface';
 export const itemsRouter = express.Router();
 
 itemsRouter.get("/", async (req: Request, res: Response) => {
-  console.log("hello");
-
   try {
     const items: Item[] = await ItemService.findAll();
 
