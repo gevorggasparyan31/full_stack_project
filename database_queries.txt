@@ -1,0 +1,23 @@
+USE Homework;
+CREATE TABLE items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  description TEXT,
+  image VARCHAR(255)
+);
+
+INSERT INTO items (name, price, description, image)
+VALUES
+  ('Item 1', 10.99, 'Description for Item 1', 'https://picsum.photos/id/0/300/300'),
+  ('Item 2', 19.99, 'Description for Item 2', 'https://picsum.photos/id/1/300/300'),
+  ('Item 3', 14.99, 'Description for Item 3', 'https://picsum.photos/id/2/300/300'),
+  ('Item 4', 24.99, 'Description for Item 4', 'https://picsum.photos/id/3/300/300'),
+  ('Item 5', 9.99, 'Description for Item 5', 'https://picsum.photos/id/4/300/300'),
+  ('Item 6', 12.99, 'Description for Item 6', 'https://picsum.photos/id/5/300/300'),
+  ('Item 7', 17.99, 'Description for Item 7', 'https://picsum.photos/id/6/300/300'),
+  ('Item 8', 11.99, 'Description for Item 8', 'https://picsum.photos/id/7/300/300'),
+  ('Item 9', 8.99, 'Description for Item 9', 'https://picsum.photos/id/8/300/300'),
+  ('Item 10', 16.99, 'Description for Item 10', 'https://picsum.photos/id/9/300/300');
+
+select * from items;
