@@ -2,8 +2,8 @@ import { createConnection } from 'mysql2/promise';
 
 export const db = createConnection({
   host: 'localhost',
-  user: 'root',
-  password: 'ankap3101',
+  user: 'username',
+  password: 'password',
   database: 'Homework',
   port: 3306,
 });
